@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mechaila Garrote</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<div class="container">
+
+    <h1>Mechaila Garrote</h1>
+    <p class="role">BSIT Student</p>
+
+    <div class="inner-container">
+        <h2>Bio</h2>
+        <p>Interested in backend development and building practical Django-based applications.</p>
+    </div>
+
+    <div class="inner-container">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>Python & Django</li>
+            <li>REST APIs</li>
+            <li>SQL & Database Management</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </div>
+
+    <div class="inner-container">
+        <h2>Project</h2>
+        <p><strong>Portfolio Website</strong> - Built using Django.</p>
+    </div>
+
+    <a class="button" href="https://github.com/mechailagarrote" target="_blank">GitHub</a>
+    <a class="back-link" href="{% url 'home' %}">← Back</a>
+
+</div>
+</body>
+</html>

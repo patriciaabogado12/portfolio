@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Patricia Abogado</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<div class="container">
+
+    <h1>Patricia Abogado</h1>
+    <p class="role">BSIT Student</p>
+
+    <div class="inner-container">
+        <h2>Bio</h2>
+        <p>Aspiring web developer focused on clean and functional designs.
+           Experienced in Django fundamentals.</p>
+    </div>
+
+    <div class="inner-container">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python & Django</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </div>
+
+    <div class="inner-container">
+        <h2>Project</h2>
+        <p><strong>Portfolio Website</strong> - Built using Django.</p>
+    </div>
+
+    <a class="button" href="https://github.com/patriciaabogado12/portfolio" target="_blank">GitHub</a>
+    <a class="back-link" href="{% url 'home' %}">← Back</a>
+
+</div>
+</body>
+</html>

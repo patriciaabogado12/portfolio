@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e2(w_460x0_e4fr^y*-=1w2(72(d=^p21%5*hth6e$&n3vyrmh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://ourportfolio-w1ht.onrender.com']
 
 
 # Application definition
@@ -55,17 +55,19 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'templates'], 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
         },
-    }
+    },
 ]
+
 
 
 WSGI_APPLICATION = 'portfolio.wsgi.application'

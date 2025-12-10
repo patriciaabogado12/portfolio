@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<h1>Portfolio</h1>
+
+<section>
+    <h2>Member Profiles:</h2>
+
+    <div class="team-container">
+        <div class="team-card">
+            <h3>Patricia Abogado</h3>
+            <p>BSIT 2 - 102</p>
+            <a class="button" href="{% url 'patricia' %}">View Profile</a>
+        </div>
+
+        <div class="team-card">
+            <h3>Mechaila Garrote</h3>
+            <p>BSIT 2 - 102</p>
+            <a class="button" href="{% url 'mechaila' %}">View Profile</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
